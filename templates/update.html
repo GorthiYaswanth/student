@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test flask | app</title>
+</head>
+<body>
+<h1>update task</h1>
+<form method="POST" enctype="application/x-www-form-urlencoded">
+    <label for="usn">usn:</label>
+    <input type="text" id="usn" name="usn" value="{{ task.usn}}" required><br><br>
+
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name" value="{{task.name}}" required><br><br>
+
+    <label for="age">age:</label>
+    <input type="text" id="age" name="age" value="{{task.age}}" required><br><br>
+
+    <label for="dob">dob:</label>
+    <input type="dob" id="dob" name="dob" value="{{task.dob}}" required><br><br>
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" value="{{task.email}}" required><br><br>
+
+    <label for="contact">contact:</label>
+    <input type="contact" id="contact" name="contact" value="{{task.contact}}" required><br><br>
+
+     <label for="address">address:</label>
+    <input type="address" id="address" name="address" value="{{task.address}}" required><br><br>
+
+     <label for="parent_name">parent name:</label>
+    <input type="parent_name" id="parent_name" name="parent_name" value="{{task.parent_name}}" required><br><br>
+
+    <label for="parent_address">parent address:</label>
+    <input type="parent_address" id="parent_address" name="parent_address" value="{{task.parent_address}}" required><br><br>
+
+    <input type="submit" value="update"> <a href="/">All tasks</a>
+</form>
+</body>
+</html>
